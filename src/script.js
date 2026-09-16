@@ -142,7 +142,7 @@ scene.add(plane)
  */
 const directionalLight = new THREE.DirectionalLight('#ffffff', 3)
 directionalLight.castShadow = true
-directionalLight.shadow.mapSize.set(1024, 1024)
+directionalLight.shadow.mapSize.set(2048, 2048)
 directionalLight.shadow.camera.far = 15
 directionalLight.shadow.camera.left = -10
 directionalLight.shadow.camera.right = 10
@@ -167,7 +167,7 @@ window.addEventListener('resize', () =>
     // Update sizes
     sizes.width = window.innerWidth
     sizes.height = window.innerHeight
-    sizes.pixelRatio = Math.min(window.devicePixelRatio, 2)
+    sizes.pixelRatio = Math.min(window.devicePixelRatio, 1.5)
 
     // Update camera
     camera.aspect = sizes.width / sizes.height
@@ -210,7 +210,7 @@ const renderer = new THREE.WebGLRenderer({
     antialias: true
 })
 renderer.shadowMap.enabled = true
-renderer.shadowMap.type = THREE.PCFSoftShadowMap
+renderer.shadowMap.type = THREE.PCFShadowMap
 renderer.toneMapping = THREE.ACESFilmicToneMapping
 renderer.toneMappingExposure = 1
 renderer.setSize(sizes.width, sizes.height)
