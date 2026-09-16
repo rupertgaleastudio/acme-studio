@@ -110,7 +110,7 @@ gui.add(material, 'thickness', 0, 10, 0.001)
 
 
 // Geometry
-let geometry = new THREE.IcosahedronGeometry(2.5, 50)
+let geometry = new THREE.IcosahedronGeometry(3, 50)
 
 geometry = mergeVertices(geometry)
 geometry.computeTangents()
@@ -121,7 +121,7 @@ const wobble = new THREE.Mesh(geometry, material)
 wobble.customDepthMaterial = depthMaterial
 wobble.receiveShadow = true
 wobble.castShadow = true
-wobble.position.x = -3
+wobble.position.x = -3.5
 scene.add(wobble)
 
 /**

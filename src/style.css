@@ -51,7 +51,28 @@ body
     flex-direction: column;
     justify-content: flex-start;
     padding: 3rem;
+    position: relative;
 }
+
+.hero .scroll-cue
+{
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero .scroll-cue
+{
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce
+{
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+}
+
 
 .hero h1
 {
@@ -70,7 +91,7 @@ body
     font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 300;
     color: rgba(255, 255, 255, 1);
-    max-width: 30rem;
+    max-width: 25rem;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
@@ -98,7 +119,7 @@ body
     font-size: 1.1rem;
     font-weight: 300;
     line-height: 1.6;
-    max-width: 36rem;
+    max-width: 25rem;
     color: rgba(255, 255, 255, 0.85);
 }
 
