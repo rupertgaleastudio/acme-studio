@@ -1,15 +1,23 @@
 {
-  "dependencies": {
-    "lil-gui": "^0.21.0",
-    "three": "^0.186.0",
-    "three-custom-shader-material": "^6.4.0"
+  "name": "threejs-journey-exercise",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
   },
   "devDependencies": {
-    "vite": "^7.3.6",
+    "vite": "^6.2.2",
     "vite-plugin-glsl": "^1.6.1",
-    "vite-plugin-restart": "^2.0.0"
+    "vite-plugin-restart": "^0.4.2"
+  },
+  "dependencies": {
+    "lil-gui": "^0.20.0",
+    "three": "^0.174.0",
+    "three-custom-shader-material": "6.4"
   },
   "allowScripts": {
-    "esbuild@0.28.2": true
+    "esbuild@0.25.12": true
   }
 }
