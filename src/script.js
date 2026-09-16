@@ -191,6 +191,8 @@ scene.add(camera)
 const controls = new OrbitControls(camera, canvas)
 controls.enableDamping = true
 controls.enableZoom = false
+controls.enableRotate = false
+controls.enablePan = false
 
 /**
  * Scroll parallax
